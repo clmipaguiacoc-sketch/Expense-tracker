@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Expense Tracker</h2>
+
+    <!-- NAME -->
+    <div id="nameSection">
+        <center>
+        <p><h1>Welcome!</h1></p>
+        <p><h2>Enter your name:</p></h2>
+        <input type="text" id="nameInput" placeholder="Your name">
+        <button onclick="setName()">Continue</button>
+        </center>
+    </div>
+
+    <!-- BUDGET -->
+    <div id="budgetSection" class="hidden">
+        <p><id="welcomeText"></p>
+        <p>Enter your Budget:</p>
+        <input type="number" id="budgetInput" placeholder="Budget amount">
+        <button onclick="setBudget()">Set Budget</button>
+    </div>
+
+    <!-- MENU -->
+    <div id="menuSection" class="hidden">
+        <p><b>Choose Option:</b></p>
+
+        <button onclick="showAdd()">1. Add</button>
+        <button onclick="viewStatus()">2. View & Status</button>
+        <button onclick="exitApp()">3. Exit</button>
+
+        <!-- ADD -->
+        <div id="addSection" class="hidden">
+            <input type="text" id="category" placeholder="Category">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <div class="log" id="log"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
